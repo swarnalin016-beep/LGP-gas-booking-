@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #F5F7FA;
+  --color-bg-secondary: #FFFFFF;
+  --color-brand-emerald: #10B981;
+  --color-brand-blue: #2563EB;
+  --color-slate-900: #0F172A;
+  --color-slate-800: #1E293B;
+  --color-slate-500: #64748B;
+  --color-slate-200: #E2E8F0;
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-slate-800);
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    background-color: #0F172A;
+    color: #F8FAFC;
+  }
+}
+
+/* Theme overrides for "Natural Tones" */
+.rounded-dashboard {
+  border-radius: 1.5rem;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.dark .bg-white {
+  background-color: #1E293B;
+  border-color: #334155;
+}
+
+.dark .text-slate-900, .dark .text-gray-900 {
+  color: #F8FAFC;
+}
+
+.dark .text-slate-500, .dark .text-gray-500 {
+  color: #94A3B8;
+}
+
+.dark .border-slate-200, .dark .border-gray-100 {
+  border-color: #334155;
+}

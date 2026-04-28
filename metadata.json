@@ -1,0 +1,6 @@
+{
+  "name": "GasGuard: Smart LPG Management",
+  "description": "An IoT-driven dashboard for real-time LPG monitoring, predictive depletion alerts, and automated booking powered by Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
